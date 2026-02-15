@@ -37,3 +37,6 @@ action: アクション名
 - フロントエンド: React
 - バックエンド: Node.js
 - ブロックエディタ: Blockly
+
+### CopyRight
+copyright (c) 2026 takahashi, matunaga, kudou all rights reserved.
