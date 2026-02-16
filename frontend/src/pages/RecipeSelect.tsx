@@ -18,7 +18,7 @@ const RecipeSelect = () => {
             setLoading(true);
             try {
                 const qs = query ? `?q=${encodeURIComponent(query)}` : '';
-                const res = await fetch(`/api/recipes${qs}`, { signal: controller.signal });
+                const res = await fetch(`/create-step-tool/api/recipes${qs}`, { signal: controller.signal });
                 if (!res.ok) throw new Error(`${res.status}`);
                 const data = await res.json();
                 setRecipes(data);

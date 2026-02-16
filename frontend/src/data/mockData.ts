@@ -53,7 +53,7 @@ const transformRawData = (data: Record<string, RawIngredientData>): RecipeData =
  * @param recipeId 基準レシピのID (例: "4")
  */
 export const fetchRecipeData = async (recipeId: string): Promise<RecipeData> => {
-    const res = await fetch(`/api/${recipeId}/`);
+    const res = await fetch(`/create-step-tool/api/${recipeId}/`);
     if (!res.ok) {
         throw new Error(`Failed to load recipe data: ${res.status} ${res.statusText}`);
     }
