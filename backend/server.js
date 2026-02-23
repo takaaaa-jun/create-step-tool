@@ -103,6 +103,6 @@ const server = http.createServer((req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-server.listen(PORT, () => {
-  console.log(`API server listening on http://localhost:${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`API server listening on http://0.0.0.0:${PORT}`);
 });
